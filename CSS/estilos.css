@@ -1,0 +1,143 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(238,174,202,1) 29%, rgba(148,187,233,1) 100%);
+}
+
+@media(min-width: 400px){
+    body{
+        font-size: 18px;
+    }
+}
+
+@media(min-width: 700px){
+    body{
+        font-size: 22px;
+    }
+}
+
+@media(min-width: 1000px){
+    body{
+        font-size: 24px;
+    }
+}
+
+header{
+    align-items: center;
+    animation: animatedBackground 20s linear infinite;
+    background-blend-mode: color;
+    background-color: rgba(27, 23, 23, 0.5);
+    background-image: url("https://www.jakpost.travel/wimages/large/125-1251230_papel-de-parede-corao-rosa-conjunto-grande-para.jpg");
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    text-align: center;
+}
+
+@keyframes animatedBackground{
+    from{
+        background-position: 0 bottom;
+    }
+    to{
+        background-position: 100% bottom;
+    }
+}
+
+.title{
+    margin: 60px;
+}
+
+.title h1{
+    font-family: 'Great Vibes', cursive;
+    font-size: 3em;
+    text-shadow: 4px 4px 3px #774433;
+    margin-bottom: 10px;
+}
+
+.title h3{
+    font-family: 'Great Vibes', cursive;
+    font-size: 1,8em;
+    margin-bottom: 10px;
+}
+
+.title p{
+    text-align: justify;
+}
+
+.menu{
+    background-color: lightgrey;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.saudadeContainer{
+    margin: 60px;
+}
+
+.saudadeContainer h2{
+    font-family:'Great Vibes', cursive;
+    font-size: 2em;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    text-shadow: 3px 3px 3px gray;
+}
+
+.saudadeContainer .grid{
+    align-content: center;
+    display: grid;
+    gap: 2em;
+    justify-content: space-around;
+    text-align: center;
+}
+
+@media(min-width: 700px){
+    .saudadeContainer .grid{
+        grid-template-columns: 240px 240px;
+    }
+}
+
+@media(min-width: 1000px){
+    .saudadeContainer .grid{
+        grid-template-columns: 240px 240px 240px;
+    }
+}
+
+.img-photos{
+    border-radius: 5%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    width: auto;
+    transition: transform 500ms;
+    text-align: center;
+}
+
+.img-photos:hover{
+    box-shadow: 0px 0px 5px 3px gray;
+    transform: scale(1.1);
+}
+
+.footer{
+    background-color: slategray;
+    bottom: 0;
+    text-align: center;
+    z-index: 1;   
+}
